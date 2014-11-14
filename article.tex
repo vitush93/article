@@ -1,0 +1,135 @@
+%%% HEADER
+\documentclass[12pt,a4paper]{article}
+
+% Core packages
+\usepackage{amsmath, amsthm}
+\usepackage{minted}
+\usepackage{graphicx}
+
+% Czech
+\usepackage[czech]{babel}
+\usepackage[IL2]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Math stuff
+\newtheorem{theorem}{Věta}
+\theoremstyle{definition}
+\newtheorem{definition}{Definice}
+\def\dd{\,\mathrm{d}}
+
+% PDF Links
+\usepackage[unicode]{hyperref}   % Musí být za všemi ostatními balíčky
+\hypersetup{pdftitle=Article Latex Template}
+\hypersetup{pdfauthor=Vít Habada}
+
+%%% CONTENT START
+
+% Title
+\title{The Triangulation of Titling Data in
+       Non-Linear Gaussian Fashion via $\rho$ Series}
+\date{October 31, 475}
+\author{John Doe\\ Magic Department, Richard Miles University
+        \and Richard Row, \LaTeX\ Academy}
+
+\pagestyle{headings}
+
+% Document
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section{Section one}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget consectetur arcu. Nam est tellus, volutpat sit amet auctor et, tempus nec augue. Pellentesque fringilla enim ac est sollicitudin, ut tristique quam semper. 
+
+
+Quisque tincidunt gravida urna, vitae interdum enim scelerisque sit amet. Nunc mattis nibh ac arcu interdum pulvinar. Donec porta ipsum sed tortor malesuada aliquet. Vivamus nec risus non nibh hendrerit porta in nec felis. Etiam a risus placerat, fermentum dui cursus, condimentum lorem.
+
+\begin{minted}{c++}
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	cout << "Hello world!";
+	return 0;
+}
+
+\end{minted}
+
+Vivamus scelerisque eleifend pretium. Vivamus posuere, dolor quis consectetur volutpat, risus erat porttitor nisi, in accumsan orci erat vel sem. Fusce id lacus orci. Vivamus sit amet sagittis lorem. Suspendisse ornare eros vel urna suscipit tincidunt sed quis ipsum. 
+
+\begin{theorem}[Time-dependent Schrödinger equation]
+We shall describe single particle moving in electric field as following:
+\begin{align*}
+	i\hbar\frac{\partial}{\partial t} \Psi(\mathbf{r},t) &= \left[ \frac{-\hbar^2}{2m}\nabla^2 + V(\mathbf{r},t)\right] \Psi(\mathbf{r},t)
+\end{align*}
+Thats some badass equation.
+\end{theorem}
+
+Etiam at leo eleifend arcu iaculis aliquet a et eros. Nullam et metus non massa varius pretium. Fusce tristique neque a orci tristique, eleifend molestie lorem bibendum. Donec nisi turpis, bibendum eu tristique non, aliquam sed arcu.
+
+\subsection{Subsection one}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget consectetur arcu. Nam est tellus, volutpat sit amet auctor et, tempus nec augue. Pellentesque fringilla enim ac est sollicitudin, ut tristique quam semper. Quisque tincidunt gravida urna, vitae interdum enim scelerisque sit amet. Nunc mattis nibh ac arcu interdum pulvinar. Donec porta ipsum sed tortor malesuada aliquet. Vivamus nec risus non nibh hendrerit porta in nec felis. Etiam a risus placerat, fermentum dui cursus, condimentum lorem.
+
+\begin{theorem}[Riemann hypothesis]
+All non-trivial zeros of the Riemann zeta function are located at the critical plane.
+\end{theorem}
+\begin{proof}
+There is not any yet.
+\end{proof}
+
+\paragraph{}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget consectetur arcu. Nam est tellus, volutpat sit amet auctor et, tempus nec augue. Pellentesque fringilla enim ac est sollicitudin, ut tristique quam semper. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=30mm]{logo.eps}
+	\caption{Logo MFF UK}
+	\label{fig:mff}
+\end{figure}
+
+Logo Matfyzu vidíme na obrázku~\ref{fig:mff}. Quisque tincidunt gravida urna, vitae interdum enim scelerisque sit amet. Nunc mattis nibh ac arcu interdum pulvinar. Donec porta ipsum sed tortor malesuada aliquet. Vivamus nec risus non nibh hendrerit porta in nec felis. Etiam a risus placerat, fermentum dui cursus, condimentum lorem.
+
+
+\subsubsection{Subsubsection one}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget consectetur arcu. Nam est tellus, volutpat sit amet auctor et, tempus nec augue. Pellentesque fringilla enim ac est sollicitudin, ut tristique quam semper.
+\begin{itemize}
+	\item \textbf{Item 1} some item desc
+	\item \textbf{Item 2} some item desc
+	\item \textbf{Item 3} some item desc
+	\item \textbf{Item 4} some item desc
+\end{itemize}
+Quisque tincidunt gravida urna, vitae interdum enim scelerisque sit amet. Nunc mattis nibh ac arcu interdum pulvinar. 
+Donec porta ipsum sed tortor malesuada aliquet. Vivamus nec risus non nibh hendrerit porta in nec felis. Etiam a risus placerat, fermentum dui cursus, condimentum lorem.
+
+
+
+%%% CONTENT END
+
+\newpage
+\renewcommand{\refname}{Seznam použité literatury}
+\begin{thebibliography}{99}
+\bibitem{lamport94}
+  {\sc Lamport,} Leslie.
+  \emph{\LaTeX: A Document Preparation System}.
+  2. vydání.
+  Massachusetts: Addison Wesley, 1994.
+  ISBN 0-201-52983-1.
+
+\bibitem{cvut2013}
+	{\sc Pokorný,} Jaroslav.
+	{\sc Valenta,} Michal.
+	\emph{Databázové systémy}.
+	1. vydání.
+	nakladatelství ČVUT: Thákurova 1, 160 41 Praha 6.
+	ISBN 978-80-01-05212-9.
+
+
+\end{thebibliography}
+
+
+
+\end{document}
