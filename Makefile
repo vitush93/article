@@ -1,8 +1,4 @@
-all: *.pdf
-	pdflatex -shell-escape *.tex
-	pdflatex -shell-escape *.tex
-
-*.pdf:
+all:
 	pdflatex -shell-escape *.tex
 	pdflatex -shell-escape *.tex
 
